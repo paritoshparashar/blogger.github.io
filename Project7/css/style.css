@@ -1,0 +1,148 @@
+html,
+body {
+  margin: 0%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+a {
+  color: var(--color-gray);
+  text-decoration: none;
+}
+:root {
+  --color-gray: #3f4954;
+  --color-light: #686666da;
+  --color-bg: #0f0f0f;
+  --color-white: #ffffff;
+  --color-midnight: #104f55;
+  --sky: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+}
+ul {
+  list-style-type: none;
+}
+
+.nav-brand {
+  margin: 0%;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+.social {
+  padding: 1.4rem 0;
+}
+.nav-link {
+  transition: transform 650ms;
+  padding: 1.4rem;
+}
+.nav-link:hover {
+  background-color: var(--color-midnight);
+  transition: transform 250ms;
+  transform: translateY(10px);
+}
+.nav-link:hover a {
+  color: var(--color-white);
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.nav-items {
+  padding-left: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.nav {
+  background: white;
+  padding: 0 2rem;
+  height: 0rem;
+  min-height: 10vh;
+  overflow: hidden;
+  transition: height 0.6s linear;
+}
+
+.collapse {
+  height: 25rem;
+}
+
+.nav-menu {
+  justify-content: space-between;
+}
+
+.social a.fb:hover {
+  color: blue;
+}
+.social a.ig:hover {
+  color: #d6249f;
+}
+.social a.tw:hover {
+  color: lightskyblue;
+}
+.social a.yt:hover {
+  color: red;
+}
+.social i {
+  padding: 0 0.3rem;
+}
+
+.fas.fa-bars {
+  font-size: 2rem;
+  position: absolute;
+  left: 90%;
+  top: 2.5%;
+  display: none;
+}
+
+/*  MAIN CONTENT    */
+
+main .site-title {
+  height: 110vh;
+  color: white;
+  background: url(../assets/Background-image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+main h3{
+  margin-top: 0%;
+  font-family: 'Montserrat', sans-serif;
+}
+main h1{
+  font-size: 3rem;
+  font-family: 'Crimson Pro', serif;
+}
+main .btn{
+  background-color: lightskyblue;
+  border: none;
+  color: white;
+  padding: 1rem;
+  border-radius: 10%;
+}
+main .site-title .site-background{
+  text-align: center;
+  padding: 10rem;
+}
+
+/*  MAIN CONTENT    */
+
+@media only screen and (max-width: 765px) {
+}
+
+@media only screen and (max-width: 765px) {
+  .nav .nav-menu,
+  .nav .nav-items {
+    flex-direction: column;
+  }
+
+  .fas.fa-bars {
+    display: initial;
+  }
+  .nav {
+    min-height: 8.2vh;
+  }
+}
